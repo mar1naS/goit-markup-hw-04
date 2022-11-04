@@ -195,6 +195,15 @@ header {
   line-height: 1.71;
 }
 
+.advantages .picture-icon {
+  margin-bottom: 30px;
+  background-color: var(--btn-bck-color);
+  border-radius: 4px;
+}
+
+.picture-icon {
+  padding: 25px 100px;
+}
 /* Projects */
 
 .section-projects {
@@ -240,6 +249,33 @@ header {
 
 .position {
   margin-bottom: 30px;
+}
+
+/*Clients*/
+
+.clients-list {
+  display: flex;
+  padding: 16px, 32px;
+}
+
+.clients-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list .item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+}
+
+.clients-list .item:hover,
+.clients-list .item:focus {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.button-icon {
+  padding: 16px 32px;
 }
 
 /* Button */
