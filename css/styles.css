@@ -31,7 +31,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid purple;
 }
 
 h1,
@@ -144,15 +143,31 @@ header {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
+
+.auth-icon {
+  margin-right: 10px;
+  fill: #afb1b8;
+}
+
+.auth-icon:hover {
+  fill: var(--accent-color);
+}
+
 /* Hero */
 .hero {
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
+  margin: auto;
   background-color: #2f303a;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
@@ -251,15 +266,50 @@ header {
   margin-bottom: 30px;
 }
 
+.section-list .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.section-list .social-item {
+  padding: 12px;
+  margin-right: 10px;
+}
+
+.section-list .social-item: :last-child {
+  margin-right: 0px;
+}
+
+.section-list .social-item:hover,
+.section-list .social-item:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.section-list .social-icon {
+  fill: #afb1b8;
+}
+
+.section-list .social-item:hover .social-icon,
+.section-list .social-item:focus .social-icon {
+  fill: var(--primary-bg-color);
+}
+
 /*Clients*/
 
 .clients-list {
   display: flex;
-  padding: 16px, 32px;
 }
 
-.clients-list .item:not(:last-child) {
+.clients-list .item {
   margin-right: 30px;
+  padding: 16px 32px;
+}
+
+.clients-list .item:last-child {
+  margin-right: 0px;
 }
 
 .clients-list .item {
@@ -275,7 +325,12 @@ header {
 }
 
 .button-icon {
-  padding: 16px 32px;
+  fill: #afb1b8;
+}
+
+.clients-list .item:hover .button-icon,
+.clients-list .item:focus .button-icon {
+  fill: var(--accent-color);
 }
 
 /* Button */
@@ -354,6 +409,12 @@ button {
 .examples .item {
   width: 370px;
   margin: 15px;
+}
+
+.examples .item:hover,
+.examples .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .examples .title {
@@ -450,6 +511,58 @@ footer {
 .contact .address:hover,
 .contact .address:focus {
   color: var(--accent-color);
+}
+
+.all-contacts {
+  display: flex;
+}
+
+.all-contacts .social-contacts {
+  margin-left: 70px;
+}
+
+.social-contacts .join {
+  margin-bottom: 20px;
+
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-bg-color);
+}
+
+.social-contacts .social-icons {
+  display: flex;
+}
+
+.social-contacts .social-item {
+  margin-right: 10px;
+}
+
+.social-contacts .social-item:last-child {
+  margin-right: 0px;
+}
+
+.social-contacts .social-item {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.social-contacts .social-item:hover,
+.social-contacts .social-item:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-icon {
+  fill: var(--primary-bg-color);
 }
 
 .visually-hidden {
