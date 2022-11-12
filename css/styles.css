@@ -128,6 +128,7 @@ header {
 
 .auth-nav {
   display: flex;
+  margin-left: auto;
 }
 
 .auth-nav .item:not(:last-child) {
@@ -136,7 +137,7 @@ header {
 
 .auth-nav .link {
   display: flex;
-  align-content: center;
+  align-items: center;
 
   color: var(--primary-text-color);
 
@@ -155,6 +156,7 @@ header {
 .auth-icon {
   margin-right: 10px;
   fill: currentColor;
+  display: block;
 }
 
 /* Hero */
@@ -269,23 +271,23 @@ header {
 .section-list .social-icons {
   display: flex;
   justify-content: center;
+  align-content: center;
   margin-top: 16px;
   margin-bottom: 30px;
 }
 
 .section-list .social-item {
-  padding: 12px;
   margin-right: 10px;
   width: 44px;
   height: 44px;
 }
 
-.section-list .social-item: :last-child {
+.section-list .social-item:last-child {
   margin-right: 0px;
 }
 
-.section-list .social-item:hover,
-.section-list .social-item:focus {
+.section-list .social-link:hover,
+.section-list .social-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
@@ -294,15 +296,22 @@ header {
   fill: #afb1b8;
 }
 
-.section-list .social-item:hover .social-icon,
-.section-list .social-item:focus .social-icon {
+.section-list .social-link:hover .social-icon,
+.section-list .social-link:focus .social-icon {
   fill: var(--primary-bg-color);
 }
 
 .social-icons .social-link {
   width: 100%;
   height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
+
 /*Clients*/
 
 .clients-list {
@@ -544,6 +553,8 @@ footer {
 }
 
 .social-contacts .social-item {
+  width: 44px;
+  height: 44px;
   margin-right: 10px;
 }
 
@@ -551,7 +562,7 @@ footer {
   margin-right: 0px;
 }
 
-.social-contacts .social-item {
+.social-contacts .social-link {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -559,11 +570,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  align-content: center;
 }
 
-.social-contacts .social-item:hover,
-.social-contacts .social-item:focus {
+.social-contacts .social-link:hover,
+.social-contacts .social-link:focus {
   background-color: var(--accent-color);
 }
 
