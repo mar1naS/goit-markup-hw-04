@@ -297,12 +297,12 @@ header {
 }
 
 .section-list .social-icon {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 .section-list .social-link:hover .social-icon,
 .section-list .social-link:focus .social-icon {
-  fill: var(--primary-bg-color);
+  fill: currentColor;
 }
 
 .social-icons .social-link {
@@ -351,7 +351,7 @@ header {
 }
 
 .button-icon {
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 .clients-list .link-company:hover .button-icon,
